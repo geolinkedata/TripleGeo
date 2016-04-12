@@ -11,6 +11,11 @@
         <fileset dir="${lib_dir}" includes="**/*.jar" />
     </path>
 
+    <target name="print-jvm-version"> 
+       <echo>Java/JVM version: ${ant.java.version}</echo> 
+       <echo>Java/JVM detail version: ${java.version}</echo> 
+    </target>
+
     <target name="clean">
         <delete dir="${build_dir}/classes"/>
         <delete dir="${build_dir}/jars"/>
